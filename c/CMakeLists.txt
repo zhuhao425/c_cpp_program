@@ -4,14 +4,11 @@ project(c)
 
 include_directories(include)
 
-
-
-add_library(sort lib/sort.c)
-add_library(strOp lib/strOp.c)
-
-
+set(SRC_LIST
+    src/strOp.c
+    src/sort.c
+)
 
 
 
-add_executable(c c.c)
-TARGET_LINK_LIBRARIES(c sort strOp)
+add_executable(c src/c.c ${SRC_LIST})
