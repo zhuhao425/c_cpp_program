@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/sort.h
+
+../include/strOp.h
+
+/home/zh/workspace/c_cpp_program/c/src/c.c
+stdio.h
+-
+strOp.h
+-
+sort.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/zh/workspace/c_cpp_program/c/src/sort.c
+sort.h
+-
+
+/home/zh/workspace/c_cpp_program/c/src/strOp.c
+strOp.h
+-
+string.h
+-
+stdio.h
+-
+
