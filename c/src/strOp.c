@@ -9,7 +9,7 @@ int trimSpace(char *inbuf,char *outbuf)
     int index = 0;
     if(inbuf == NULL || outbuf == NULL)
     {
-        printf("argument is error\n");
+        printf("argument is not valid\n");
         return 1;
     }
 
@@ -41,6 +41,11 @@ int trimSpace(char *inbuf,char *outbuf)
 
 int getStr1Str2(char *source, char *buf1, char *buf2)
 {
+    if(source == NULL || buf1 == NULL || buf2 == NULL)
+    {
+        printf("argument is not valid\n");
+        return 1;
+    }
     int len = strlen(source);
     int i;
     int index1 = 0;
@@ -54,5 +59,33 @@ int getStr1Str2(char *source, char *buf1, char *buf2)
     }
     *(buf1 + index1) = 0;
     *(buf2 + index2) = 0;
+    return 0;
+}
+
+int exactKeyAndValue(char *str, char *key, char *value)
+{
+    int len, i, sep;
+    if(str == NULL || key == NULL || value == NULL)
+    {
+        printf("argument is not valid!\n");
+        return 1;
+    }
+
+    len = strlen(str);
+
+    for(i = 0; i < len; i ++)
+        if(str[i] == '=')
+            break;
+    sep = i;
+    if(sep == len)
+    {
+        printf("input str should include key and value and use '=' to connect them,for example a = 1\n");
+        return 1;
+    }
+
+    *(str + sep) = 0;
+
+    trimSpace(str, key);
+    trimSpace(str + sep + 1, value);
     return 0;
 }
