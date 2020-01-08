@@ -89,3 +89,25 @@ int exactKeyAndValue(char *str, char *key, char *value)
     trimSpace(str + sep + 1, value);
     return 0;
 }
+
+int reversal(char *str,char * result)
+{
+    int len,i;
+    int index = 0;
+
+    if(str == NULL || result == NULL)
+    {
+        printf("argument is error\n");
+        return 1;
+    }
+
+    len = strlen(str);
+
+    for(i = len - 1; i >= 0; i --)
+    {
+        *(result + index ++) = *(str + i);
+    }
+    *(result + index) = 0;
+    
+    return 0;
+}

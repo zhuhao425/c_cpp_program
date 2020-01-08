@@ -14,3 +14,19 @@ int trimSpace(char *inbuf,char *outbuf);
     @buf2 偶数位字符组成的字符串
 */
 int getStr1Str2(char *source, char *buf1, char *buf2);
+
+
+/*
+从字符串中读取key和value
+    @str 要提取的字符串
+    @key 提取的结果
+    @value 提取的结果
+*/
+int exactKeyAndValue(char *str, char *key, char *value);
+
+/*
+将字符串反转
+    @str 要反转的字符串
+    @result 反转结果
+*/
+int reversal(char *str,char * result);
