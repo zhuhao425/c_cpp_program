@@ -20,3 +20,26 @@ int bubblesort(int array[],int len)
     }
     return 0;
 }
+
+int selectionsort(int array[], int len)
+{
+    int i,j,mins;
+    for(i = 0; i < len; i ++)
+    {
+        mins = i;
+        for(j = i; j < len; j ++)
+        {
+            if(array[j] < array[mins])
+            {
+                mins = j;
+            }
+        }
+        swap(&array[i], &array[mins]);
+    }
+    return 0;
+}
+
+int quicksort(int array[], int len)
+{
+    return 0;
+}

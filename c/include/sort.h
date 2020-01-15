@@ -7,7 +7,21 @@ void swap(int *p, int *q);
 
 /*
 冒泡排序 
-    @array->带排序数组 
-    @len->数组长度
+    @array 待排序数组 
+    @len 数组长度
 */
-int bubblesort(int array[],int len);
+int bubblesort(int array[], int len);
+
+/*
+选择排序
+    @array 待排序数组 
+    @len 数组长度
+*/
+int selectionsort(int array[], int len);
+
+/*
+快速排序
+    @array 待排序数组 
+    @len 数组长度
+*/
+int quicksort(int array[], int len);
