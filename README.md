@@ -1,2 +1,2 @@
-# c_cpp_program
-the fundamental of c and cpp program
+# leetcode-cn
+solution for the problem in leetcode-cn
