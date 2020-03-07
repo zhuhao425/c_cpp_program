@@ -1,2 +1,2 @@
-# leetcode-cn
-solution for the problem in leetcode-cn
+# cpp_program
+review the knowlege of cpp program
