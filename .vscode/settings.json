@@ -21,5 +21,8 @@
     "files.associations": {
         "iostream": "cpp",
         "iosfwd": "cpp"
-    }, // 格式化时调整include的顺序（按字母排序）
+    },
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/kinetic/lib/python2.7/dist-packages"
+    ], // 格式化时调整include的顺序（按字母排序）
 }
